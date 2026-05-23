@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Auth System</title>
+
+    <link rel="stylesheet" href="../indexcss/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="log-in-form-container">
+
+        <div class="log-form-card">
+
+            <div class="premium-lock">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <h1 class="log-heading">Welcome To Login</h1>
+
+            <!-- LOGIN SCREEN -->
+            <div class="login-screen">
+
+                <form>
+
+                    <div class="input-box">
+                        <label for="email">E-mail / Phone / Username</label>
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input id="email" type="text" placeholder="Enter Your E-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <span><i class="fa-solid fa-key"></i></span>
+                        <input id="password" type="password" placeholder="Enter Your Password">
+
+                        <span class="toggle-password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+
+                    <div class="login-options">
+
+                        <div class="remember-box">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+
+                        <a href="#" class="forgot-password">Forgot password?</a>
+
+                    </div>
+
+                    <button type="button" class="login-btn">Login</button>
+
+                    <div class="social-divider">
+                        <span></span>
+                        <p>or</p>
+                        <span></span>
+                    </div>
+
+                    <div class="social-login">
+
+                        <button type="button" class="google-btn">
+                            <i class="fa-brands fa-google"></i>
+                            Login with Google
+                        </button>
+
+                        <button type="button" class="github-btn">
+                            <i class="fa-brands fa-github"></i>
+                            Login with GitHub
+                        </button>
+
+                    </div>
+
+                    <div class="account-actions">
+
+                        <div class="signup-text">
+                            <p>
+                                New here?
+                                <a href="#" class="open-signup">Create Account</a>
+                            </p>
+                        </div>
+
+                        <div class="account-helper">
+                            <p>Join now and access your secure dashboard.</p>
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- SIGNUP SCREEN -->
+            <div class="signup-screen hidden-screen">
+
+                <form>
+
+                    <div class="input-box">
+                        <label for="full-name">Full Name</label>
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input id="full-name" type="text" placeholder="Enter Your Full Name">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="signup-username">Username</label>
+                        <span><i class="fa-solid fa-at"></i></span>
+                        <input id="signup-username" type="text" placeholder="Choose Username">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="signup-email">E-mail</label>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input id="signup-email" type="email" placeholder="Enter Your E-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="signup-mobile">Mobile Number</label>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <input id="signup-mobile" type="text" placeholder="Enter Mobile Number">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="signup-password">Password</label>
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input id="signup-password" type="password" placeholder="Create Password">
+
+                        <span class="signup-toggle-password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirm-password">Confirm Password</label>
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input id="confirm-password" type="password" placeholder="Confirm Password">
+
+                        <span class="confirm-toggle-password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+
+                    <button type="button" class="create-account-btn">
+                        Create Account
+                    </button>
+
+                    <div class="signup-text">
+                        <p>
+                            Already have account?
+                            <a href="#" class="back-to-login">Login</a>
+                        </p>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- SIGNUP OTP -->
+            <div class="otp-screen hidden-screen">
+
+                <form>
+
+                    <h2 class="otp-heading">Verify OTP</h2>
+
+                    <p class="otp-text">
+                        Enter the 6-digit OTP sent to your email
+                    </p>
+
+                    <div class="otp-boxes">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                    </div>
+
+                    <button type="button" class="verify-otp-btn">
+                        Verify OTP
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- SIGNUP SUCCESS -->
+            <div class="success-screen hidden-screen">
+
+                <div class="premium-lock">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <h2 class="success-heading">Account Created!</h2>
+
+                <p class="success-text">
+                    Your account has been created successfully.
+                    <br>
+                    You can now login with your credentials.
+                </p>
+
+                <button type="button" class="go-login-btn">
+                    Go To Login
+                </button>
+
+            </div>
+
+            <!-- FORGOT PASSWORD SCREEN -->
+            <div class="forgot-screen hidden-screen">
+
+                <form>
+
+                    <h2 class="otp-heading">Forgot Password</h2>
+
+                    <p class="otp-text">
+                        Enter your email or mobile number
+                    </p>
+
+                    <div class="input-box">
+                        <label for="forgot-user">E-mail / Mobile</label>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input id="forgot-user" type="text" placeholder="Enter Email or Mobile">
+                    </div>
+
+                    <button type="button" class="send-forgot-otp-btn">
+                        Send OTP
+                    </button>
+
+                    <div class="signup-text">
+                        <p>
+                            <a href="#" class="forgot-back-login">Back To Login</a>
+                        </p>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- FORGOT OTP -->
+            <div class="forgot-otp-screen hidden-screen">
+
+                <form>
+
+                    <h2 class="otp-heading">Verify Reset OTP</h2>
+
+                    <p class="otp-text">
+                        Enter the OTP to reset password
+                    </p>
+
+                    <div class="otp-boxes">
+                        <input type="text" maxlength="1" class="forgot-otp-input">
+                        <input type="text" maxlength="1" class="forgot-otp-input">
+                        <input type="text" maxlength="1" class="forgot-otp-input">
+                        <input type="text" maxlength="1" class="forgot-otp-input">
+                        <input type="text" maxlength="1" class="forgot-otp-input">
+                        <input type="text" maxlength="1" class="forgot-otp-input">
+                    </div>
+
+                    <button type="button" class="verify-forgot-otp-btn">
+                        Verify OTP
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- RESET PASSWORD -->
+            <div class="reset-screen hidden-screen">
+
+                <form>
+
+                    <h2 class="otp-heading">Reset Password</h2>
+
+                    <div class="input-box">
+                        <label for="new-password">New Password</label>
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input id="new-password" type="password" placeholder="Enter New Password">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirm-new-password">Confirm Password</label>
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input id="confirm-new-password" type="password" placeholder="Confirm New Password">
+                    </div>
+
+                    <button type="button" class="reset-password-btn">
+                        Reset Password
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- RESET SUCCESS -->
+            <div class="reset-success-screen hidden-screen">
+
+                <div class="premium-lock">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <h2 class="success-heading">Password Reset Successful!</h2>
+
+                <p class="success-text">
+                    Your password has been updated successfully.
+                </p>
+
+                <button type="button" class="reset-go-login-btn">
+                    Go To Login
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../indexjavascript/index.js"></script>
+
+</body>
+
+</html>
